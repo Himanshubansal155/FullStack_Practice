@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practical-8</title>
-    <link rel="stylesheet" href="./style8.css" />
+    <title>Practical-9</title>
+    <link rel="stylesheet" href="./style9.css" />
   </head>
-
   <body>
     <div id="header">
       <ul id="header-ul">
+        <span class="openbtn" onclick="openNav()">☰</span>
         <li><a href="#banner">Home</a></li>
         <li><a href="#section1">About Us</a></li>
         <li><a href="#section2">Team</a></li>
         <li><a href="#section3">Technologies</a></li>
         <li><a href="#section4">Contact</a></li>
       </ul>
+    </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#banner">Home</a>
+      <a href="#section1">About</a>
+      <a href="#section2">Team</a>
+      <a href="#section3">Technologies</a>
+      <a href="#section4">Contact</a>
     </div>
     <div id="banner">
       <h1>Practical-8</h1>
@@ -97,7 +105,10 @@
           </div>
           <div class="box" id="box-12">
             <div class="divStyle">
-              <img src="https://sabe.io/classes/css/hero.png" alt="CSS" />
+              <img
+                src="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg"
+                alt="CSS"
+              />
               <div>
                 <h1>Introduction to CSS</h1>
                 <p>
@@ -169,4 +180,14 @@
       </div>
     </div>
   </body>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+    }
+  </script>
 </html>
