@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-10</title>
+    <link rel="stylesheet" href="./style10.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <ul id="header-ul">
+        <span id="openbtn" onclick="openNav()">☰</span>
+        <span id="closebtn" onclick="closeNav()">×</span>
+      </ul>
+    </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="#banner">
+        <span class="fa fa-home"></span>
+        Home</a
+      >
+      <hr class="hrtag" />
+      <a href="#section1">
+        <span class="fa fa-user"></span>
+        About</a
+      >
+      <hr class="hrtag" />
+      <a href="#section2"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+          />
+        </svg>
+        Service</a
+      >
+      <hr class="hrtag" />
+      <a href="#section3"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"
+          />
+        </svg>
+        Blog</a
+      >
+      <hr class="hrtag" />
+      <a href="#section4"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+          />
+        </svg>
+        Contact</a
+      >
+      <hr class="hrtag" />
+      <div class="bottom">
+        <a href="#" class="fa fa-facebook inline"></a>
+        <a href="#" class="fa fa-youtube inline"></a>
+        <a href="#" class="fa fa-instagram inline"></a>
+      </div>
+    </div>
+    <div id="full-body">
+      <div id="banner">
+        <h1>Practical-10</h1>
+      </div>
+      <div id="section1">
+        <h1>Team Members</h1>
+        <div>
+          <div class="circle" id="circle-1"></div>
+          <div class="circle" id="circle-2"></div>
+          <div class="circle" id="circle-3"></div>
+          <div class="circle" id="circle-4"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function openNav() {
+      document.getElementById("openbtn").style.display = "none";
+      document.getElementById("closebtn").style.display = "inline";
+      document.getElementById("mySidebar").style.width = "30vh";
+      document.getElementById("full-body").style.marginLeft = "30vh";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("openbtn").style.display = "inline";
+      document.getElementById("closebtn").style.display = "none";
+      document.getElementById("full-body").style.marginLeft = "0";
+    }
+  </script>
+</html>

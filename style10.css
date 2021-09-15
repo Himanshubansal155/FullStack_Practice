@@ -1,0 +1,181 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-color: #4B4453;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  left: 10px;
+  padding: 5px 10px;
+}
+
+.svg{
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 10px;
+  bottom: 0;
+  background-color: #4B4453;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.inline{
+    display: inline !important;
+}
+
+hr.hrtag{
+    border: 0.5px solid gray;
+}
+
+#full-body{
+    transition: 0.5s;
+
+}
+
+.bottom{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+#closebtn {
+  font-size: 40px;
+  display: none;
+}
+
+#openbtn {
+  font-size: 40px;
+  cursor: pointer;
+}
+#header-ul a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+#header-ul a:hover {
+  background-color: white;
+  color: black;
+}
+
+#banner {
+  background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amF2YSUyMHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  margin: 50px 0;
+  height: 100vh;
+  color: white;
+  font-size: 40px;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+  text-align: center;
+}
+
+.circle {
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  margin: 20px 20px;
+}
+
+#circle-1 {
+  background-image: url(https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-2 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQt1D_RjHXSHT6TrKJNYJCIsLF4RmeQKymO1cLgRaok_wLB9MIUYQfH_MBe_qf2d5nGfM&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-3 {
+  background-image: url(https://cdn1.iconfinder.com/data/icons/avatar-97/32/avatar-02-512.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-4 {
+  background-image: url(https://www.shareicon.net/data/512x512/2015/09/18/103160_man_512x512.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+
+@media screen and (max-width: 750px) {
+  html {
+    padding: 0;
+  }
+  #header {
+    left: 0;
+    right: 0;
+  }
+  #header-ul {
+    height: 60px;
+    justify-content: right;
+    padding-right: 20px;
+  }
+  #header-ul li {
+    display: none;
+  }
+  #banner {
+    height: 50vh;
+    background-size: contain;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1060px) {
+  #banner {
+    height: 70vh;
+    background-size: contain;
+    font-size: 30px;
+  }
+}
