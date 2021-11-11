@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .height {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container-fluid bg-black height border border-1"></div>
+      <div class="container-fluid bg-primary height border border-1"></div>
+      <div class="container-fluid border border-1">
+        <div class="row">
+          <div class="col bg-primary height"></div>
+          <div class="col bg-secondary height"></div>
+          <div class="col bg-danger height"></div>
+        </div>
+      </div>
+      <div class="container-fluid bg-black height border border-1"></div>
+    </div>
+    <div class="container mt-4 text-center">
+      <div class="row">
+        <div class="col-3">
+          <div class="marginleft bg-secondary height">Column-1</div>
+        </div>
+        <div class="col-3 offset-6">
+          <div class="marginleft bg-secondary height">Column-2</div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-3">
+          <div class="marginleft bg-secondary height">Column-7</div>
+        </div>
+        <div class="col-3">
+          <div class="marginleft bg-secondary height">Column-8</div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-3">
+          <div class="marginleft bg-secondary height">Column-3</div>
+        </div>
+        <div class="col-3">
+          <div class="marginleft bg-secondary height">Column-4</div>
+        </div>
+        <div class="col-3">
+          <div class="marginleft bg-secondary height">Column-5</div>
+        </div>
+        <div class="col-3">
+          <div class="marginleft bg-secondary height">Column-6</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4 mb-4 text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="marginleft bg-secondary height">Column-9</div></div>
+            <div class="col-md-12 mt-2">
+                <div class="marginleft bg-secondary height">Column-10</div></div>
+          </div>
+        </div>
+        <div class="col-md-9">
+            <div class="marginleft bg-secondary h-100">Column-11</div></div>
+      </div>
+    </div>
+  </body>
+</html>
